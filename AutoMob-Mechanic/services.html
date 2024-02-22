@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .services-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between;
+}
+
+.services {
+    width: calc(33.33% - 20px); /* Adjust as needed */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .services {
+        width: calc(50% - 20px); /* Adjust as needed */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+    .services {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
+</style>
+<body>
+    <header><div><h3 style="color: blue;"><b><u>AutoMob-Mechanic</u></b></h3></div></header>
+    <nav><p><u>Home</u> |<u>Services</u> | <a href="booking.html" target="_blank">Booking</a>| <a href="https://mail.google.com" target="_blank">Email</a>| <a href="thisismyphoneno-+91-8710065649" target="_blank">phone-no.</a></p>
+    </nav>
+    <hr>
+    <section class="services-container">
+        <section class="services">
+            <h2>Preventive Maintenance Services</h2>
+            <img src="images/preventive-maintenance.jpg" alt="reloading..." style="height: 200px; width: 300px;">
+            <p>periodically check and keep your car running.</p>
+            <p><i>Offer: 20% Off</i></p>
+            <a href="preventive-maintenance-service.html" target="_blank"><button>More Details</button></a></button>
+        </section>
+        <section class="services">
+            <h2>Body Repair Service</h2>
+            <img src="images/body-repair.jpg" alt="reloading..." style="height: 200px; width: 300px;">
+            <p>Full chasis body repair provided by the experts.</p>
+            <p><i>Offer: 10% Off</i></p>
+            <a href="body-repair-service.html" target="_blank"><button>More Details</button></a></button>
+        </section>
+        <section class="services">
+            <h2>Car Care Service</h2>
+            <img src="images/car-care.jpg" alt="reloading..." style="height: 200px; width: 300px;">
+            <p>Get your car sparkling clean in just minutes.</p>
+            <p><i>Offer: 15% Off</i></p>
+            <a href="car-care-service.html" target="_blank"><button>More Details</button></a>
+        </section>
+    </section>
+    <hr>
+    <footer>© 2024 Arunabha Mishra. All rights reserved.</footer>
+</body>
+</html>   

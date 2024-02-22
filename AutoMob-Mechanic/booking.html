@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+datalist,
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+/* Optional: Add more styling as needed */
+
+</style>
+<body>
+    <header><h2>AutoMob-Mechanic</h2></header>
+    <nav><p><u>Home</u> |<u>Services</u> | <a href="booking.html" target="_blank">Booking</a>| <a href="https://mail.google.com" target="_blank">Email</a>| <a href="thisismyphoneno-+91-8710065649" target="_blank">phone-no.</a></p>
+    </nav>
+    <hr>
+    <section>
+        <h2>Book Your Service</h2>
+    </section>
+    <form action="#" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z]+\s[A-Za-z]+" title="Please enter your first name and last name separated by a space">
+        </div>
+        <div>
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="code">Code:</label>
+            <select id="code" name="code" required>
+                <option value="" disabled selected>Select Code</option>
+                <option value="+213">+213</option>
+                <option value="+91">+91</option>
+                <option value="+244">+244</option>
+                <option value="+61">+61</option>
+            </select>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+        </div>
+        <div>
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="Preventive Maintenance Service">Preventive Maintenance Service</option>
+                <option value="Body Repair Service">Body Repair Service</option>
+                <option value="Car Care Service">Car Care Service</option>
+            </select>
+        </div>
+        <div>
+            <label for="make">Car Make:</label>
+            <input type="text" id="make" name="make" list="carMakes" required>
+            <datalist id="carMakes">
+                <option value="Mahindra">
+                <option value="Honda">
+                <option value="Hyundai">
+                <option value="Ford">
+                <option value="Toyota">
+                <option value="Nissan">
+                <!-- Add more options as needed -->
+            </datalist>
+        </div>
+        <div>
+            <label for="model">Car Model:</label>
+            <input type="text" id="model" name="model" required>
+        </div>
+        <div>
+            <label>Fuel Type:</label><br>
+            <input type="radio" id="petrol" name="fuelType" value="Petrol" required>
+            <label for="petrol">Petrol</label><br>
+            <input type="radio" id="diesel" name="fuelType" value="Diesel" required>
+            <label for="diesel">Diesel</label><br>
+            <!-- Add more fuel types as needed -->
+        </div>
+        <div>
+            <label for="kilometers">Kilometers Ran:</label>
+            <input type="number" id="kilometers" name="kilometers" required>
+        </div>
+        <div>
+           <a href="appointment.html"><button type="submit">Schedule an Appointment</button></a>
+        </div>
+    </form>
+    <hr>
+    <footer>© 2024 Arunabha Mishra. All rights reserved.</footer>
+
+</body>
+</html>
