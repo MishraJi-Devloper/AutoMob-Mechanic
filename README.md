@@ -5,7 +5,7 @@ This repository contains the code for the AutoMob-Mechanic website, a platform f
 
 ## Files Included
 
-- `index.html`: The homepage of the website providing an overview of the services offered and allowing users to explore more.
+- `home.html`: The homepage of the website providing an overview of the services offered and allowing users to explore more.
 - `services.html`: Page detailing the various services offered by AutoMob-Mechanic, including preventive maintenance, body repair, and car care services.
 - `booking.html`: Allows users to schedule appointments for services by providing their details and preferred appointment date.
 - `booking-success.html`: Confirmation page displayed after successfully booking a service, informing users that their booking is successful.
