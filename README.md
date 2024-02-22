@@ -25,7 +25,7 @@ git clone https://github.com/MishraJi-Devloper/AutoMob-Mechanic.git
 2. Navigate to the directory:
 
 ```
-cd AutoMob-Mechanic-Website
+cd AutoMob-Mechanic
 ```
 
 3. Open any HTML file in a web browser to view the corresponding webpage.
